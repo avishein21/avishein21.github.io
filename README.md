@@ -1,25 +1,36 @@
-# Avi Shein’s website
+# Avi Shein’s academic website
 
-A simple academic website for https://avishein21.github.io.
+## Update your existing website
 
-## Upload and publish
+Replace index.html and style.css with these versions. Add cv.html. The included publications.html has a matching sidebar and header; if you already added papers, copy your paper entries into it before replacing your existing file.
 
-1. Extract `avishein21-website.zip` on your computer.
-2. Open https://github.com/avishein21/avishein21.github.io.
-3. Choose **Add file → Upload files**.
-4. Drag the five files INSIDE the extracted folder into the upload area: `index.html`, `publications.html`, `style.css`, `photo.svg`, and `README.md`. Do not upload the ZIP or the containing folder. README.md replaces the initial README.
-5. Click **Commit changes** to commit directly to `main`.
-6. Open **Settings → Pages**.
-7. Under Source choose **Deploy from a branch**. Select **main** and **/ (root)**, then Save.
-8. Visit https://avishein21.github.io after deployment finishes. Publication may take up to ten minutes.
+Keep your existing bpe-thesis.pdf, CV, and personal photo. The included photo.svg is only a placeholder. If you use a personal photo, update the image src on all three HTML pages to its filename.
 
-## Personalize
+## Personalize the sidebar
 
-- Edit `index.html` for your bio, current affiliation, research interests, and news. Confirm the starter bio before publishing.
-- Upload your own `photo.jpg` or `photo.png`, then replace `photo.svg` in the image tag in `index.html`. Update the image alt text to `Avi Shein`.
-- Upload `cv.pdf` and uncomment the CV link in `index.html`.
-- Add your email and Google Scholar URL when ready.
-- Edit `publications.html` to add papers; a commented example is included. No paper titles, authors, or publication claims have been invented.
-- Edit `style.css` to adjust the visual design.
+On index.html, publications.html, and cv.html:
+- Replace `Hometown: add yours` with your hometown.
+- Replace `<span>Email: add yours</span>` with `<a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>`.
+- Use your photo filename in the image src and change alt to `Avi Shein`.
 
-Open `index.html` locally to preview the site. No installation or build command is required.
+## PDFs
+
+Put bpe-thesis.pdf in the same folder as index.html. Both thesis links point to it.
+
+Add cv.pdf and replace the placeholder paragraph on cv.html with the commented download link. Alternatively, change the top navigation href from cv.html to cv.pdf on all three pages.
+
+## News
+
+Edit the news-list in index.html. Each news item is an <li> element. Add a date if desired.
+
+## Publish
+
+Open this repository in VS Code, save your changes, then run:
+
+```bash
+git add index.html publications.html cv.html style.css
+git commit -m "Add academic sidebar and thesis news"
+git push origin main
+```
+
+Stage any newly added PDF or photo as well. GitHub Pages republishes after pushing. Open index.html in your browser to preview locally.
