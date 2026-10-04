@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 :root { color-scheme: light; --ink: #494e52; --link: #327f94; --line: #f0f1f2; }
-body { margin: 0; background: #cd7cfd; color: var(--ink); font: 18px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+body { margin: 0; background: #e8d7f9; color: var(--ink); font: 18px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
 a { color: var(--link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
